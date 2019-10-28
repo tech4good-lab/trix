@@ -2,6 +2,10 @@ Trix.config.blockAttributes = attributes =
   default:
     tagName: "div"
     parse: false
+  caution:
+    tagName: "caution-box"
+    group: false
+    terminal: true
   quote:
     tagName: "blockquote"
     nestable: true

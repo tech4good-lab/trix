@@ -1,4 +1,7 @@
 Trix.config.textAttributes =
+  inlinecode:
+    tagName: "code"
+    inheritable: true
   bold:
     tagName: "strong"
     inheritable: true
