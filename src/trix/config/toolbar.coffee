@@ -12,7 +12,7 @@ Trix.config.toolbar =
       </span>
 
       <span class="trix-button-group trix-button-group--block-tools" data-trix-button-group="block-tools">
-        <button type="button" class="trix-button trix-button--icon" data-trix-attribute="yellow" title="#{lang.yellow}" tabindex="-1">#{lang.yellow}</button>
+        <button type="button" class="trix-button trix-button--icon" data-trix-attribute="caution" title="#{lang.caution}" tabindex="-1">#{lang.caution}</button>
         <button type="button" class="trix-button trix-button--icon trix-button--icon-heading-1" data-trix-attribute="heading1" title="#{lang.heading1}" tabindex="-1">#{lang.heading1}</button>
         <button type="button" class="trix-button trix-button--icon trix-button--icon-quote" data-trix-attribute="quote" title="#{lang.quote}" tabindex="-1">#{lang.quote}</button>
         <button type="button" class="trix-button trix-button--icon trix-button--icon-code" data-trix-attribute="code" title="#{lang.code}" tabindex="-1">#{lang.code}</button>
