@@ -25,6 +25,7 @@ Trix.config.toolbar =
       <span class="trix-button-group trix-button-group--file-tools" data-trix-button-group="file-tools">
         <button type="button" class="trix-button trix-button--icon trix-button--icon-attach" data-trix-action="attachFiles" title="#{lang.attachFiles}" tabindex="-1">#{lang.attachFiles}</button>
         <button type="button" class="trix-button trix-button--icon" data-trix-action="x-attach-codepen" title="#{lang.attachCodepen}" tabindex="-1">#{lang.attachCodepen}</button>
+        <button type="button" class="trix-button trix-button--icon" data-trix-action="x-attach-hifi-tooltip" title="#{lang.attachHifiTooltip}" tabindex="-1">#{lang.attachHifiTooltip}</button>
       </span>
 
       <span class="trix-button-group-spacer"></span>

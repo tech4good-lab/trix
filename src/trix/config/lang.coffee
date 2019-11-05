@@ -1,6 +1,7 @@
 Trix.config.lang =
   attachFiles: "Attach Files"
   attachCodepen: "Attach Codepen"
+  attachHifiTooltip: "Attach Hifi Tooltip"
   bold: "Bold"
   bullets: "Bullets"
   byte:  "Byte"
