@@ -15,7 +15,7 @@ class Trix.AttachmentView extends Trix.ObjectView
 
   createNodes: ->
     figure = innerElement = makeElement
-      tagName: "figure"
+      tagName: "span"
       className: @getClassName()
       data: @getData()
       editable: false
