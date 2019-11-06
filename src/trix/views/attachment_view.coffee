@@ -14,8 +14,12 @@ class Trix.AttachmentView extends Trix.ObjectView
     []
 
   createNodes: ->
+    tag_name = "figure"
+    if @attachment.hasContent() and @attachment.getContent().startsWith("<hifi-tooltip-element")
+      tag_name = "span"
+
     figure = innerElement = makeElement
-      tagName: "span"
+      tagName: tag_name
       className: @getClassName()
       data: @getData()
       editable: false
