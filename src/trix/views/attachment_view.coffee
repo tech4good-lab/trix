@@ -33,7 +33,8 @@ class Trix.AttachmentView extends Trix.ObjectView
     else
       innerElement.appendChild(node) for node in @createContentNodes()
 
-    innerElement.appendChild(@createCaptionElement())
+    if @attachment.hasContent() and @attachment.getContent().startsWith("<hifi-tooltip-element")
+      innerElement.appendChild(@createCaptionElement())
 
     if @attachment.isPending()
       @progressElement = makeElement
