@@ -15,7 +15,9 @@ class Trix.AttachmentView extends Trix.ObjectView
 
   createNodes: ->
     tag_name = "figure"
-    if @attachment.hasContent() and @attachment.getContent().startsWith("<hifi-tooltip-element")
+
+    is_hifi_tooltip = @attachment.hasContent() and @attachment.getContent().startsWith("<hifi-tooltip-element")
+    if is_hifi_tooltip
       tag_name = "span"
 
     figure = innerElement = makeElement
@@ -33,7 +35,7 @@ class Trix.AttachmentView extends Trix.ObjectView
     else
       innerElement.appendChild(node) for node in @createContentNodes()
 
-    if @attachment.hasContent() and @attachment.getContent().startsWith("<hifi-tooltip-element")
+    unless is_hifi_tooltip
       innerElement.appendChild(@createCaptionElement())
 
     if @attachment.isPending()
